@@ -23,8 +23,8 @@ class MyClient(discord.Client):
 
         # Check if the number of words exceeds the limit
         if word_count > self.MAX_WORDS:
-            await message.channel.send(f"{self.user.mention} You've been typing for a while!")
-            image_url = "class-nerd-glasses-f87a4c0f-9a9a-41de-8eee-2d236f838657-jpgrendition.jpg"
+            await message.channel.send(f"{self.user.mention} Your message have more than 40 words you fucking nerd ! Write something shorter next time.")
+            image_url = "PythonDiscordBot\class-nerd-glasses-f87a4c0f-9a9a-41de-8eee-2d236f838657-jpgrendition.jpg"
             await message.channel.send(file=discord.File(image_url))
 
 intents = discord.Intents.all()
